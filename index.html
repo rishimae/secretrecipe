@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Secret Burger</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="label">User Login</h1>
+      <form class="login" action="home.html" method="post" name="form" onsubmit="return verified()">
+        <div class="font">Email</div>
+        <input autocomplete="off" type="text" id="email" name="email">
+        <div id="error_email">Please fill up your Email or Phone Number</div>
+        <div class="fontf2">Password</div>
+        <input type="password" id="password" name="password">
+        <div id="error_pswrd">Please fill up your Password</div>
+        <button type="submit" onclick="check_emailpass()">LOGIN</button>
+      </form>
+    </div>
+
+    <script>
+      function verified() {
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+    
+      if (email === "rishimae@gmail.com" && password === "SHiki_KIsh*") {
+          return true; 
+      } else {
+          if (email !== "rishimae@gmail.com") {
+              document.getElementById("error_email").style.display = "block";
+          }
+          if (password !== "SHiki_KIsh*") {
+              document.getElementById("error_pswrd").style.display = "block";
+          }
+          alert ("Email or password does not match. Please try again.")
+          return false;
+      }
+    }
+    </script>
+    
+  </body>
+
+</html>
