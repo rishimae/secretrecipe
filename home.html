@@ -16,7 +16,14 @@
     </div>
   </div>
 
-  <script src="index.js"></script>
+  <script>
+    function confirmrecipe(){
+    var confirmMsg = "Are you sure you want to view the recipe?";
+    if (confirm(confirmMsg)) {
+      window.location.href = "https://www.allrecipes.com/recipe/168018/secret-burger-sauce/";
+    }
+  }
+  </script>
 
 </body>
 </html>
