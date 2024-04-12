@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PUP Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="label">User Login</h1>
+      <form class="login" action="homepage.html" method="post" name="form" onsubmit="return verified()">
+        <div class="font">Email</div>
+        <input autocomplete="off" type="text" id="email" name="email">
+        <div id="error_email">Please fill up your Email or Phone Number</div>
+        <div class="fontf2">Password</div>
+        <input type="password" id="password" name="password">
+        <div id="error_pswrd">Please fill up your Password</div>
+        <button type="submit" onclick="check_emailpass()">LOGIN</button>
+      </form>
+
+      
+    </div>
+
+    <script src="validation.js"></script>
+    
+  </body>
+
+</html>
