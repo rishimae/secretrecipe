@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: url(login_wall.png) no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  position: relative;
+  margin-top: 100px;
+  width: 450px;
+  height: auto;
+  background: #B299E4;
+  border-radius: 5px;
+}
+.label{
+  padding: 20px 130px;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+.login{
+  padding: 20px 40px;
+}
+.login .font{
+  font-size: 18px;
+  color: white;
+  margin: 5px 0;
+}
+.login input{
+  height: 40px;
+  width: 350px;
+  padding: 0 5px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #B299E4;
+}
+.login .fontf2{
+  margin-top: 30px;
+  color: white;
+}
+.login button{
+  margin: 45px 0 30px 0;
+  height: 45px;
+  width: 365px;
+  font-size: 18px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: #B299E4;
+  border-radius: 3px;
+  border: 1px solid #1F0454;
+  transition: 1s;
+}
+.login button:hover{
+  background: #1F0454;
+}
+.login #error_email, .login #error_pswrd{
+  margin-top: 5px;
+  width: 345px;
+  font-size: 12px;
+  color: #1F0454;
+  background: rgba(255, 0, 0, 0.1);
+  text-align: center;
+  padding: 5px 8px;
+  border: 1px solid #B299E4;
+  display: none;
+}
+
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+.contain h1{
+  font-size: 70px;
+  margin-top: 80px;
+}
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+button{
+  font-family: 'Poppins', sans-serif;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #1F0454;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+span{
+  background: #1F0454;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span{
+  width: 100%;
+}
+button:hover{
+  border: none;
+}
