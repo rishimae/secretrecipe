@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome!</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="content">
+    <h1>Shhh... it's our little secret!</h1>
+    <p>Peek into our recipe if you dare, but beware! Loose lips sink flavor ships! <br> If you spill the beans, your taste buds might just hit snooze.</p>
+
+    <div>
+      <button type="button" onclick="confirmrecipe()"><span></span>RECIPE</button>
+      <a href="https://www.allrecipes.com/recipe/25473/the-perfect-basic-burger/">
+      <button type="button"><span></span>LEARN MORE</button></a>
+    </div>
+  </div>
+
+  <script>
+    function confirmrecipe(){
+    var confirmMsg = "Are you sure you want to view the recipe?";
+    if (confirm(confirmMsg)) {
+      window.location.href = "https://www.allrecipes.com/recipe/168018/secret-burger-sauce/";
+    }
+  }
+  </script>
+
+</body>
+</html>
